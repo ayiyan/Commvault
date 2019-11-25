@@ -1,0 +1,124 @@
+<App_CreateStoragePolicyReq>
+<copyName>Primary</copyName>
+<storagePolicyName>SP_SHARED_DC1_BRONZE</storagePolicyName>
+<description />
+<numberOfStreams />
+<clientGroup>
+    <clientGroupName />
+</clientGroup>
+<incrementalStoragePolicy>
+    <storagePolicyName />
+</incrementalStoragePolicy>
+<storagePolicyCopyInfo>
+<useGlobalPolicy>
+<storagePolicyName>GDP_TENANT_DC1</storagePolicyName>
+</useGlobalPolicy>
+<isDefault>1</isDefault>
+<active>1</active>
+    <hardWareCompression>0</hardWareCompression>
+    <sidbBlockSizeKB>128</sidbBlockSizeKB>
+    <storagePolicyFlags>
+        <blockLevelDedup>1</blockLevelDedup>
+        <enableGlobalDeduplication>2</enableGlobalDeduplication>
+        <enableSnapshot>2</enableSnapshot>
+        <randomizeStream>2</randomizeStream>
+    </storagePolicyFlags>
+    <copyFlags>
+        <autoAddDataPaths>2</autoAddDataPaths>
+    </copyFlags>
+    <library>
+        <libraryName />
+    </library>
+    <mediaAgent>
+        <mediaAgentName />
+    </mediaAgent>
+    <drivePool>
+        <drivePoolName />
+        <libraryName />
+    </drivePool>
+    <spareMediaGroup>
+        <spareMediaGroupName />
+        <libraryName />
+    </spareMediaGroup>
+    <retentionRules>
+        <retainArchiverDataForDays>-1</retainArchiverDataForDays>
+        <retainBackupDataForCycles>7</retainBackupDataForCycles>
+        <retainBackupDataForDays>7</retainBackupDataForDays>
+        <jobs />
+        <retentionFlags>
+                <extendedRetentionFirst>0</extendedRetentionFirst>
+                <enableDataAging>2</enableDataAging>
+                <enableManagedDiskSpace>2</enableManagedDiskSpace>
+                <selectJobsFromPreviousTier>2</selectJobsFromPreviousTier>
+                <retainFullAndLastDifferential>2</retainFullAndLastDifferential>
+                <jobBasedRetention>2</jobBasedRetention>
+                <grcRemoteCopy>2</grcRemoteCopy>
+                <flagsMask>2</flagsMask>
+        </retentionFlags>
+        <extendedRetentionRuleOne>
+            <endDays>90</endDays>
+            <graceDays>0</graceDays>
+            <isEnabled>1</isEnabled>
+            <rule>EXTENDED_ALLFULL</rule>
+        </extendedRetentionRuleOne>
+            <extendedRetentionRuleTwo>
+            <endDays>365</endDays>
+            <graceDays>1</graceDays>
+            <isEnabled>1</isEnabled>
+            <rule>EXTENDED_WEEK</rule>
+        </extendedRetentionRuleTwo>
+        <extendedRetentionRuleThree>
+            <endDays>1825</endDays>
+            <graceDays>2</graceDays>
+            <isEnabled>1</isEnabled>
+            <rule>EXTENDED_MONTH</rule>
+        </extendedRetentionRuleThree>
+    </retentionRules>
+    <dedupeFlags>
+        <enableDeduplication>1</enableDeduplication>
+        <enableClientSideDedup>2</enableClientSideDedup>
+        <enableDASHFull>1</enableDASHFull>
+        <pauseAndRecoverCurrentDDB>2</pauseAndRecoverCurrentDDB>
+        <automaticallyPauseAdnRecoverDDB>2</automaticallyPauseAdnRecoverDDB>
+        <useGlobalDedupStore>1</useGlobalDedupStore>
+        <hostGlobalDedupStore>2</hostGlobalDedupStore>
+    </dedupeFlags>
+    <DDBPartitionInfo>
+        <maInfoList>
+            <clientIPAddress />
+            <vssDestinationVolume />
+            <mediaAgent>
+                <mediaAgentName />
+            </mediaAgent>
+            <subStoreList>
+                <accessPath>
+                    <path />
+                </accessPath>
+            </subStoreList>
+        </maInfoList>
+        <mediaAgents>
+            <client>
+                <clientName />
+            </client>
+        </mediaAgents>
+    </DDBPartitionInfo>
+</storagePolicyCopyInfo>
+<dfmServer>
+    <name />
+</dfmServer>
+<replicationProtocolType>
+    <id>0</id>
+    <copyFlags>
+        <autoAddDataPaths>2</autoAddDataPaths>
+        <auxCopyReencryptData>1</auxCopyReencryptData>
+        <storeKeyOnMedia>1</storeKeyOnMedia>    
+    </copyFlags>
+    <dataEncryption>
+        <encryptData>1</encryptData>               
+        <encryptionType>BLOWFISH</encryptionType>
+        <encryptionKeyLength>128</encryptionKeyLength>
+    </dataEncryption>
+</replicationProtocolType>
+<generateXML>0</generateXML>
+<filePath />
+</App_CreateStoragePolicyReq>
